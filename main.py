@@ -201,7 +201,7 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
 
     df_limit = df_sorted.limit(100)
 
-    df_limit.write.format("csv").mode("overwrite").save("it_data/it_data.csv")
+    df_limit.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("it_data/it_data.csv")
 
     logging.info("it_data.csv is created")
 
@@ -225,7 +225,7 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
 
     df_select = df_joined.select("id", "area", "name", "address", "postcode")
 
-    df_select.write.format("csv").mode("overwrite").save("marketing_address_info/marketing_address_info.csv")
+    df_select.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("marketing_address_info/marketing_address_info.csv")
 
     logging.info("marketing_address_info.csv is created")
 
@@ -246,7 +246,7 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
 
     df_percentage = df_readable.withColumn("success_calls_perc", (F.col("total_calls_successful")/F.col("total_calls_made")*100).cast(T.IntegerType()))
 
-    df_percentage.write.format("csv").mode("overwrite").save("department_breakdown/department_breakdown.csv")
+    df_percentage.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("department_breakdown/department_breakdown.csv")
 
     logging.info("department_breakdown.csv is created")
     logging.info("Starting output 3")
@@ -271,7 +271,7 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
 
     df_top_performers = get_top_performers(df=df_filter, group_by_col="area", order_by_col="total_sales_amount", top_n=3)
 
-    df_top_performers.write.format("csv").mode("overwrite").save("top_3/top_3.csv")
+    df_top_performers.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("top_3/top_3.csv")
 
     logging.info("top_3.csv is created.")
     logging.info("End output 4")
@@ -294,7 +294,7 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
 
     df_top3 = get_top_performers(df=df_aggregate, group_by_col="area", order_by_col="total_quantity", top_n=3)
 
-    df_top3.write.format("csv").mode("overwrite").save("top_3_most_sold_per_department_netherlands/top_3_most_sold_per_department_netherlands.csv")
+    df_top3.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("top_3_most_sold_per_department_netherlands/top_3_most_sold_per_department_netherlands.csv")
 
     logging.info("top_3_most_sold_per_department_netherlands.csv is created.")
     logging.info("End output 5")
@@ -309,7 +309,7 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
 
     df_salesperson = get_top_performers(df=df_aggregate, group_by_col="country", order_by_col="total_sales_amounty", top_n=1)
 
-    df_salesperson.write.format("csv").mode("overwrite").save("best_salesperson/best_salesperson.csv")
+    df_salesperson.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("best_salesperson/best_salesperson.csv")
 
     logging.info("best_salesperson.csv is created.")
     logging.info("End of output 6")
@@ -324,4 +324,8 @@ if __name__ == "__main__":
     dataset_two_path = sys.argv[2]
     dataset_three_path = sys.argv[3]
     
-    main(dataset_one_path, dataset_two_path, dataset_three_path)
+    try:
+        main(dataset_one_path, dataset_two_path, dataset_three_path)
+    except Exception as e:
+        logging.error(f"Error occurred during processing: {str(e)}")
+        sys.exit(1)

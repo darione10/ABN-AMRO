@@ -21,7 +21,7 @@ jobs:
           python -m pip install dist/app-0.2.tar.gz
       - name: Run pytest
         run: |
-          pytest test_func.py --cov=your_script --cov-report=xml 
+          pytest
       - name: Run PySpark Application
         run: |
           python main.py datasets/dataset_one.csv datasets/dataset_two.csv datasets/dataset_three.csv

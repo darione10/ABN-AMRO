@@ -1,0 +1,24 @@
+2024-09-21 15:52:39,216 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_one.csv
+2024-09-21 15:52:39,520 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_two.csv
+2024-09-21 15:52:39,723 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_three.csv
+2024-09-21 15:52:39,723 - INFO - All datasets are loaded.
+2024-09-21 15:52:39,821 - INFO - Data filtered on: ['IT']
+2024-09-21 15:52:40,969 - INFO - it_data.csv is created
+2024-09-21 15:52:40,982 - INFO - Data filtered on: ['id']
+2024-09-21 15:52:41,733 - INFO - marketing_address_info.csv is created
+2024-09-21 15:52:45,497 - INFO - department_breakdown.csv is created
+2024-09-21 15:52:52,538 - INFO - top_3.csv is created.
+2024-09-21 15:52:52,571 - INFO - Data filtered on: ['Netherlands']
+2024-09-21 15:52:59,211 - INFO - top_3_most_sold_per_department_netherlands.csv is created.
+2024-09-21 19:41:39,697 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_one.csv
+2024-09-21 19:41:39,959 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_two.csv
+2024-09-21 19:41:40,177 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_three.csv
+2024-09-21 19:41:40,177 - INFO - All datasets are loaded.
+2024-09-21 19:41:40,271 - INFO - Data filtered on: ['IT']
+2024-09-21 19:41:41,365 - INFO - it_data.csv is created
+2024-09-21 19:41:41,380 - INFO - Data filtered on: ['id']
+2024-09-21 19:41:41,900 - INFO - marketing_address_info.csv is created
+2024-09-21 19:41:45,615 - INFO - department_breakdown.csv is created
+2024-09-21 19:41:52,395 - INFO - top_3.csv is created.
+2024-09-21 19:41:52,443 - INFO - Data filtered on: ['Netherlands']
+2024-09-21 19:41:58,417 - INFO - top_3_most_sold_per_department_netherlands.csv is created.

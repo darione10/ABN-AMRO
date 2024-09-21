@@ -147,3 +147,30 @@
 2024-09-21 20:10:55,741 - INFO - Starting output 6
 2024-09-21 20:11:01,769 - INFO - best_salesperson.csv is created.
 2024-09-21 20:11:01,769 - INFO - End of output 6
+2024-09-21 20:32:11,685 - ERROR - Error occurred during processing: name 'load_csv_in_spark' is not defined
+2024-09-21 20:32:31,830 - ERROR - Error occurred during processing: name 'load_csv_in_spark' is not defined
+2024-09-21 20:34:19,460 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_one.csv
+2024-09-21 20:34:19,759 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_two.csv
+2024-09-21 20:34:19,961 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_three.csv
+2024-09-21 20:34:19,961 - INFO - All datasets are loaded.
+2024-09-21 20:34:19,961 - INFO - Starting output 1
+2024-09-21 20:34:20,061 - INFO - Data filtered on: ['IT']
+2024-09-21 20:34:21,237 - INFO - it_data.csv is created
+2024-09-21 20:34:21,237 - INFO - End of output 1
+2024-09-21 20:34:21,237 - INFO - Starting output 2
+2024-09-21 20:34:21,254 - INFO - Data filtered on: ['Marketing']
+2024-09-21 20:34:22,121 - INFO - marketing_address_info.csv is created
+2024-09-21 20:34:22,121 - INFO - End of output 2
+2024-09-21 20:34:22,121 - INFO - Starting output 3
+2024-09-21 20:34:24,352 - INFO - department_breakdown.csv is created
+2024-09-21 20:34:24,352 - INFO - Starting output 3
+2024-09-21 20:34:24,352 - INFO - Starting output 4
+2024-09-21 20:34:29,035 - INFO - top_3.csv is created.
+2024-09-21 20:34:29,036 - INFO - End output 4
+2024-09-21 20:34:29,036 - INFO - Starting output 5
+2024-09-21 20:34:29,072 - INFO - Data filtered on: ['Netherlands']
+2024-09-21 20:34:38,783 - INFO - top_3_most_sold_per_department_netherlands.csv is created.
+2024-09-21 20:34:38,783 - INFO - End output 5
+2024-09-21 20:34:38,783 - INFO - Starting output 6
+2024-09-21 20:34:44,549 - INFO - best_salesperson.csv is created.
+2024-09-21 20:34:44,549 - INFO - End of output 6

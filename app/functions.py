@@ -7,6 +7,19 @@ from pathlib import Path
 import logging
 from pyspark.sql import SparkSession
 
+def setup_logging():
+    log_file = 'application.log'
+    max_file_size = 5 * 1024 * 1024  # 5 MB
+    backup_count = 3  # Keep 3 backup files
+
+    handler = RotatingFileHandler(log_file, maxBytes=max_file_size, backupCount=backup_count)
+    handler.setLevel(logging.INFO)
+
+    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    handler.setFormatter(formatter)
+
+    logging.getLogger().addHandler(handler)
+    logging.getLogger().setLevel(logging.INFO)
 
 def load_csv_in_spark(spark: SparkSession, file_path: str) -> DataFrame:
     """

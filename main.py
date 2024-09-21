@@ -12,6 +12,7 @@ from app.functions import *
 
 spark = SparkSession \
     .builder \
+    .master("local[*]") \
     .appName("abnamro") \
     .getOrCreate()
 

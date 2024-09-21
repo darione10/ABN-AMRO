@@ -132,7 +132,7 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
 
     df_top_performers = get_top_performers(df=df_filter, group_by_col="area", order_by_col="total_sales_amount", top_n=3)
 
-    df_top_performers.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("top_3/top_3.csv")
+    df_top_performers.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("datasets/top_3.csv")
 
     logging.info("top_3.csv is created.")
     logging.info("End output 4")

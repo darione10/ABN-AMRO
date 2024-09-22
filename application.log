@@ -499,3 +499,34 @@ Caused by: java.io.IOException: Mkdirs failed to create file:/C:/Users/dario/Des
 2024-09-22 11:39:57,940 - INFO - Starting output extra_insight_two
 2024-09-22 11:39:59,339 - INFO - extra_insight_two.csv is created.
 2024-09-22 11:39:59,339 - INFO - End of output extra_insight_two
+2024-09-22 11:43:46,685 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_one.csv
+2024-09-22 11:43:46,931 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_two.csv
+2024-09-22 11:43:47,150 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_three.csv
+2024-09-22 11:43:47,150 - INFO - All datasets are loaded.
+2024-09-22 11:43:47,150 - INFO - Starting output 1
+2024-09-22 11:43:47,236 - INFO - Data filtered on: ['IT']
+2024-09-22 11:43:48,502 - INFO - it_data.csv is created
+2024-09-22 11:43:48,502 - INFO - End of output 1
+2024-09-22 11:43:48,502 - INFO - Starting output 2
+2024-09-22 11:43:48,532 - INFO - Data filtered on: ['Marketing']
+2024-09-22 11:43:49,345 - INFO - marketing_address_info.csv is created
+2024-09-22 11:43:49,345 - INFO - End of output 2
+2024-09-22 11:43:49,345 - INFO - Starting output 3
+2024-09-22 11:43:51,613 - INFO - department_breakdown.csv is created
+2024-09-22 11:43:51,613 - INFO - Starting output 3
+2024-09-22 11:43:51,613 - INFO - Starting output 4
+2024-09-22 11:43:56,483 - INFO - top_3.csv is created.
+2024-09-22 11:43:56,483 - INFO - End output 4
+2024-09-22 11:43:56,483 - INFO - Starting output 5
+2024-09-22 11:43:56,536 - INFO - Data filtered on: ['Netherlands']
+2024-09-22 11:44:00,643 - INFO - top_3_most_sold_per_department_netherlands.csv is created.
+2024-09-22 11:44:00,643 - INFO - End output 5
+2024-09-22 11:44:00,643 - INFO - Starting output 6
+2024-09-22 11:44:05,989 - INFO - best_salesperson.csv is created.
+2024-09-22 11:44:05,989 - INFO - End of output 6
+2024-09-22 11:44:05,990 - INFO - Starting output extra_insight_one
+2024-09-22 11:44:09,408 - INFO - extra_insight_one.csv is created.
+2024-09-22 11:44:09,408 - INFO - End of output extra_insight_one
+2024-09-22 11:44:09,408 - INFO - Starting output extra_insight_two
+2024-09-22 11:44:11,074 - INFO - extra_insight_two.csv is created.
+2024-09-22 11:44:11,074 - INFO - End of output extra_insight_two

@@ -189,15 +189,16 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
     logging.info("extra_insight_one.csv is created.")
     logging.info("End of output extra_insight_one")
 
-    ## Output extra_insight_two - **What is the most sold product by country**
+    ## Output extra_insight_two - **What is the average age by department?**
     logging.info("Starting output extra_insight_two")
     
     df_joined = df1.join(df3, df1.id == df3.caller_id)
 
-    df_aggregate = df_joined.groupBy(F.col("area"))\
+    df_avg_age = df_joined.groupBy(F.col("area"))\
         .agg(F.avg(F.col("age")).cast(T.IntegerType()).alias("avg_age"))
     
-    df_aggregate.show()
+    df_avg_age.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("extra_insight_two/extra_insight_two .csv")
+
 
     logging.info("extra_insight_two.csv is created.")
     logging.info("End of output extra_insight_two")

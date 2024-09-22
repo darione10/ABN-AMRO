@@ -8,7 +8,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 from pyspark.sql import SparkSession
 import sys
-from app.functions import *
+from app.utils import *
 
 spark = SparkSession \
     .builder \

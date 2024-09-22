@@ -1,7 +1,7 @@
 import pytest
 from chispa.dataframe_comparer import *
 import pyspark.sql.functions as F
-from app.functions import filter_column_by_list, order_dataframe, extract_pattern, get_top_performers
+from app.utils import filter_column_by_list, order_dataframe, extract_pattern, get_top_performers
 from pyspark.sql import SparkSession
 
 spark = (SparkSession.builder

@@ -6,7 +6,7 @@ This application processes telemarketing datasets for EternalTeleSales Fran van 
 ## Requirements
 
 - **Python Version**: 3.10
-- **PySpark Version**: 3.1.1
+- **PySpark Version**: 3.5.2
 - **Testing Framework**: [Chispa](https://github.com/MrPowers/chispa)
 - **No Notebooks**: Avoid using Jupyter or similar notebooks; the application runs as a standalone script.
 - **No Standalone Pandas**: While PySpark can integrate with Pandas, it should not be used as a standalone library.

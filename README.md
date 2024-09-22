@@ -52,3 +52,23 @@ The application produces several outputs as specified:
 - **Extra Insight Two**: [Description of insight]
 - **Output Directory**: `extra_insight_two`
 
+## Project Structure
+The project is organized as follows:
+
+**main.py**: The main Python script to execute data processing.
+
+**app/utils.py**: Includes generic functions used.
+
+**test_functions.py**: Includes the pytest functions to validate that all used under `utils.py` work properly
+
+**.github/workflows/build_package.yaml**: Contains the GitHub Actions description for the automated build pipeline.
+
+**datasets/**: The directory where the input files are stored for this assignment.
+
+**requirements.txt**: A file listing project dependencies.
+
+**exercise.md**: The file describing the assignment.
+
+**application.log**: Logging from the application
+
+**README.md**: This documentation file.

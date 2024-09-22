@@ -1,5 +1,5 @@
 # EternalTeleSales Fran van Seb Group
-## Overview
+## Overview 
 
 This application processes telemarketing datasets for EternalTeleSales Fran van Seb Group, focusing on insights about their employees' performance in different sales areas. It leverages PySpark for data processing and analysis.
 

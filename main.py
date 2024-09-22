@@ -61,7 +61,7 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
 
     df_limit = df_sorted.limit(100)
     logging.info("Saving")
-    df_limit.write.format("csv").mode("overwrite").option("header", "true").save("it_data/it_data.csv")
+    df_limit.write.format("csv").mode("overwrite").option("header", "true").save("it_data")
 
     logging.info("it_data.csv is created")
 
@@ -85,7 +85,7 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
 
     df_select = df_joined.select("id", "area", "name", "address", "postcode")
 
-    df_select.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("marketing_address_info/marketing_address_info.csv")
+    df_select.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("marketing_address_info")
 
     logging.info("marketing_address_info.csv is created")
 
@@ -106,7 +106,7 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
 
     df_percentage = df_readable.withColumn("success_calls_perc", (F.col("total_calls_successful")/F.col("total_calls_made")*100).cast(T.IntegerType()))
 
-    df_percentage.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("department_breakdown/department_breakdown.csv")
+    df_percentage.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("department_breakdown")
 
     logging.info("department_breakdown.csv is created")
     logging.info("Starting output 3")
@@ -131,7 +131,7 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
 
     df_top_performers = get_top_performers(df=df_filter, group_by_col="area", order_by_col="total_sales_amount", top_n=3)
 
-    df_top_performers.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("top_3/top_3.csv")
+    df_top_performers.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("top_3")
 
     logging.info("top_3.csv is created.")
     logging.info("End output 4")
@@ -154,7 +154,7 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
 
     df_top3 = get_top_performers(df=df_aggregate, group_by_col="area", order_by_col="total_quantity", top_n=3)
 
-    df_top3.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("top_3_most_sold_per_department_netherlands/top_3_most_sold_per_department_netherlands.csv")
+    df_top3.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("top_3_most_sold_per_department_netherlands")
 
     logging.info("top_3_most_sold_per_department_netherlands.csv is created.")
     logging.info("End output 5")
@@ -169,7 +169,7 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
 
     df_salesperson = get_top_performers(df=df_aggregate, group_by_col="country", order_by_col="total_sales_amounty", top_n=1)
 
-    df_salesperson.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("best_salesperson/best_salesperson.csv")
+    df_salesperson.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("best_salesperson")
 
     logging.info("best_salesperson.csv is created.")
     logging.info("End of output 6")
@@ -182,7 +182,7 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
 
     df_top_product = get_top_performers(df=df_aggregate, group_by_col="country", order_by_col="total_quantity", top_n=1)
 
-    df_top_product.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("extra_insight_one/extra_insight_one .csv")
+    df_top_product.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("extra_insight_one")
 
     logging.info("extra_insight_one.csv is created.")
     logging.info("End of output extra_insight_one")
@@ -195,7 +195,7 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
     df_avg_age = df_joined.groupBy(F.col("area"))\
         .agg(F.avg(F.col("age")).cast(T.IntegerType()).alias("avg_age"))
 
-    df_avg_age.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("extra_insight_two/extra_insight_two .csv")
+    df_avg_age.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("extra_insight_two")
 
 
     logging.info("extra_insight_two.csv is created.")

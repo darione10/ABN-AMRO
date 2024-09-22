@@ -999,3 +999,108 @@ Caused by: java.io.IOException: Mkdirs failed to create file:/C:/Users/dario/Des
 2024-09-22 14:03:56,016 - INFO - extra_insight_two.csv is created.
 2024-09-22 14:03:56,016 - INFO - End of output extra_insight_two
 2024-09-22 14:03:56,016 - INFO - Closing down clientserver connection
+2024-09-22 14:11:03,956 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_one.csv
+2024-09-22 14:11:04,254 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_two.csv
+2024-09-22 14:11:04,563 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_three.csv
+2024-09-22 14:11:04,563 - INFO - All datasets are loaded.
+2024-09-22 14:11:04,563 - INFO - Starting output 1
+2024-09-22 14:11:04,654 - INFO - Data filtered on: ['IT']
+2024-09-22 14:11:04,654 - INFO - Data ordering by: sales_amount desc
+2024-09-22 14:11:04,670 - INFO - Saving
+2024-09-22 14:11:06,082 - INFO - it_data.csv is created
+2024-09-22 14:11:06,082 - INFO - End of output 1
+2024-09-22 14:11:06,082 - INFO - Starting output 2
+2024-09-22 14:11:06,090 - INFO - Data filtered on: ['Marketing']
+2024-09-22 14:11:06,090 - INFO - Extracting pattern (\d{4}\s?[A-Z]{2}) from column address in new column postcode
+2024-09-22 14:11:07,082 - INFO - marketing_address_info.csv is created
+2024-09-22 14:11:07,082 - INFO - End of output 2
+2024-09-22 14:11:07,082 - INFO - Starting output 3
+2024-09-22 14:11:08,330 - INFO - department_breakdown.csv is created
+2024-09-22 14:11:08,332 - INFO - Starting output 3
+2024-09-22 14:11:08,332 - INFO - Starting output 4
+2024-09-22 14:11:10,580 - INFO - top_3.csv is created.
+2024-09-22 14:11:10,580 - INFO - End output 4
+2024-09-22 14:11:10,580 - INFO - Starting output 5
+2024-09-22 14:11:10,622 - INFO - Data filtered on: ['Netherlands']
+2024-09-22 14:11:11,886 - INFO - top_3_most_sold_per_department_netherlands.csv is created.
+2024-09-22 14:11:11,891 - INFO - End output 5
+2024-09-22 14:11:11,892 - INFO - Starting output 6
+2024-09-22 14:11:13,035 - INFO - best_salesperson.csv is created.
+2024-09-22 14:11:13,035 - INFO - End of output 6
+2024-09-22 14:11:13,035 - INFO - Starting output extra_insight_one
+2024-09-22 14:11:13,929 - INFO - extra_insight_one.csv is created.
+2024-09-22 14:11:13,929 - INFO - End of output extra_insight_one
+2024-09-22 14:11:13,929 - INFO - Starting output extra_insight_two
+2024-09-22 14:11:14,678 - INFO - extra_insight_two.csv is created.
+2024-09-22 14:11:14,678 - INFO - End of output extra_insight_two
+2024-09-22 14:11:14,678 - INFO - Closing down clientserver connection
+2024-09-22 14:12:37,657 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_one.csv
+2024-09-22 14:12:37,958 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_two.csv
+2024-09-22 14:12:38,203 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_three.csv
+2024-09-22 14:12:38,203 - INFO - All datasets are loaded.
+2024-09-22 14:12:38,203 - INFO - Starting output 1
+2024-09-22 14:12:38,286 - INFO - Data filtered on: ['IT']
+2024-09-22 14:12:38,286 - INFO - Data ordering by: sales_amount desc
+2024-09-22 14:12:38,302 - INFO - Saving
+2024-09-22 14:12:39,593 - INFO - it_data.csv is created
+2024-09-22 14:12:39,593 - INFO - End of output 1
+2024-09-22 14:12:39,593 - INFO - Starting output 2
+2024-09-22 14:12:39,609 - INFO - Data filtered on: ['Marketing']
+2024-09-22 14:12:39,610 - INFO - Extracting pattern (\d{4}\s?[A-Z]{2}) from column address in new column postcode
+2024-09-22 14:12:40,707 - INFO - marketing_address_info.csv is created
+2024-09-22 14:12:40,707 - INFO - End of output 2
+2024-09-22 14:12:40,707 - INFO - Starting output 3
+2024-09-22 14:12:42,054 - INFO - department_breakdown.csv is created
+2024-09-22 14:12:42,055 - INFO - Starting output 3
+2024-09-22 14:12:42,055 - INFO - Starting output 4
+2024-09-22 14:12:44,176 - INFO - top_3.csv is created.
+2024-09-22 14:12:44,185 - INFO - End output 4
+2024-09-22 14:12:44,185 - INFO - Starting output 5
+2024-09-22 14:12:44,227 - INFO - Data filtered on: ['Netherlands']
+2024-09-22 14:12:45,427 - INFO - top_3_most_sold_per_department_netherlands.csv is created.
+2024-09-22 14:12:45,427 - INFO - End output 5
+2024-09-22 14:12:45,427 - INFO - Starting output 6
+2024-09-22 14:12:46,557 - INFO - best_salesperson.csv is created.
+2024-09-22 14:12:46,557 - INFO - End of output 6
+2024-09-22 14:12:46,557 - INFO - Starting output extra_insight_one
+2024-09-22 14:12:47,248 - INFO - extra_insight_one.csv is created.
+2024-09-22 14:12:47,249 - INFO - End of output extra_insight_one
+2024-09-22 14:12:47,249 - INFO - Starting output extra_insight_two
+2024-09-22 14:12:48,089 - INFO - extra_insight_two.csv is created.
+2024-09-22 14:12:48,089 - INFO - End of output extra_insight_two
+2024-09-22 14:12:48,089 - INFO - Closing down clientserver connection
+2024-09-22 14:13:59,402 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_one.csv
+2024-09-22 14:13:59,703 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_two.csv
+2024-09-22 14:13:59,920 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_three.csv
+2024-09-22 14:13:59,920 - INFO - All datasets are loaded.
+2024-09-22 14:13:59,920 - INFO - Starting output 1
+2024-09-22 14:14:00,013 - INFO - Data filtered on: ['IT']
+2024-09-22 14:14:00,013 - INFO - Data ordering by: sales_amount desc
+2024-09-22 14:14:00,030 - INFO - Saving
+2024-09-22 14:14:01,327 - INFO - it_data.csv is created
+2024-09-22 14:14:01,327 - INFO - End of output 1
+2024-09-22 14:14:01,327 - INFO - Starting output 2
+2024-09-22 14:14:01,335 - INFO - Data filtered on: ['Marketing']
+2024-09-22 14:14:01,335 - INFO - Extracting pattern (\d{4}\s?[A-Z]{2}) from column address in new column postcode
+2024-09-22 14:14:02,396 - INFO - marketing_address_info.csv is created
+2024-09-22 14:14:02,396 - INFO - End of output 2
+2024-09-22 14:14:02,396 - INFO - Starting output 3
+2024-09-22 14:14:03,532 - INFO - department_breakdown.csv is created
+2024-09-22 14:14:03,532 - INFO - Starting output 3
+2024-09-22 14:14:03,532 - INFO - Starting output 4
+2024-09-22 14:14:05,643 - INFO - top_3.csv is created.
+2024-09-22 14:14:05,643 - INFO - End output 4
+2024-09-22 14:14:05,643 - INFO - Starting output 5
+2024-09-22 14:14:05,684 - INFO - Data filtered on: ['Netherlands']
+2024-09-22 14:14:06,914 - INFO - top_3_most_sold_per_department_netherlands.csv is created.
+2024-09-22 14:14:06,915 - INFO - End output 5
+2024-09-22 14:14:06,915 - INFO - Starting output 6
+2024-09-22 14:14:08,165 - INFO - best_salesperson.csv is created.
+2024-09-22 14:14:08,165 - INFO - End of output 6
+2024-09-22 14:14:08,165 - INFO - Starting output extra_insight_one
+2024-09-22 14:14:08,948 - INFO - extra_insight_one.csv is created.
+2024-09-22 14:14:08,949 - INFO - End of output extra_insight_one
+2024-09-22 14:14:08,949 - INFO - Starting output extra_insight_two
+2024-09-22 14:14:09,748 - INFO - extra_insight_two.csv is created.
+2024-09-22 14:14:09,748 - INFO - End of output extra_insight_two
+2024-09-22 14:14:09,748 - INFO - Closing down clientserver connection

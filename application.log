@@ -199,3 +199,28 @@
 2024-09-22 10:12:25,859 - INFO - Starting output 6
 2024-09-22 10:12:30,902 - INFO - best_salesperson.csv is created.
 2024-09-22 10:12:30,902 - INFO - End of output 6
+2024-09-22 10:41:33,278 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_one.csv
+2024-09-22 10:41:33,671 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_two.csv
+2024-09-22 10:41:34,017 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_three.csv
+2024-09-22 10:41:34,017 - INFO - All datasets are loaded.
+2024-09-22 10:41:34,017 - INFO - Starting output 1
+2024-09-22 10:41:34,174 - INFO - Data filtered on: ['IT']
+2024-09-22 10:41:36,218 - INFO - it_data.csv is created
+2024-09-22 10:41:36,218 - INFO - End of output 1
+2024-09-22 10:41:36,218 - INFO - Starting output 2
+2024-09-22 10:41:36,248 - INFO - Data filtered on: ['Marketing']
+2024-09-22 10:41:37,129 - INFO - marketing_address_info.csv is created
+2024-09-22 10:41:37,129 - INFO - End of output 2
+2024-09-22 10:41:37,129 - INFO - Starting output 3
+2024-09-22 10:41:39,636 - INFO - department_breakdown.csv is created
+2024-09-22 10:41:39,636 - INFO - Starting output 3
+2024-09-22 10:41:39,636 - INFO - Starting output 4
+2024-09-22 10:41:45,088 - INFO - top_3.csv is created.
+2024-09-22 10:41:45,088 - INFO - End output 4
+2024-09-22 10:41:45,088 - INFO - Starting output 5
+2024-09-22 10:41:45,151 - INFO - Data filtered on: ['Netherlands']
+2024-09-22 10:41:49,451 - INFO - top_3_most_sold_per_department_netherlands.csv is created.
+2024-09-22 10:41:49,451 - INFO - End output 5
+2024-09-22 10:41:49,451 - INFO - Starting output 6
+2024-09-22 10:41:55,277 - INFO - best_salesperson.csv is created.
+2024-09-22 10:41:55,277 - INFO - End of output 6

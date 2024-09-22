@@ -84,8 +84,10 @@ def order_dataframe(df: DataFrame, column_name: str, ascending: bool = True) -> 
     >>> ordered_df.show()
     """
     if ascending:
+        logging.info(f"Data ordering by: {column_name} asc")
         return df.orderBy(F.col(column_name).asc())
     else:
+        logging.info(f"Data ordering by: {column_name} desc")
         return df.orderBy(F.col(column_name).desc())
     
 def extract_pattern(df: DataFrame, new_column: str, extract_column: str, regex: str) -> DataFrame:
@@ -115,6 +117,7 @@ def extract_pattern(df: DataFrame, new_column: str, extract_column: str, regex: 
         logging.info("Column name not available in dataframe.")
         raise ValueError()
     # Extract pattern and create a new column called 'extracted_value'
+    logging.info(f"Extracting pattern {regex} from column {extract_column} in new column {new_column}")
     return df.withColumn(new_column, F.regexp_extract(F.col(extract_column), regex, 0))
 
 def get_top_performers(df: DataFrame, group_by_col: str, order_by_col: str, top_n: int) -> DataFrame:

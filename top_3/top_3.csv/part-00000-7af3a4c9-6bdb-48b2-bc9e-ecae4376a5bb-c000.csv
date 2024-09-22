@@ -1,16 +1,16 @@
 area,name,total_sales_amount,total_calls_made,total_calls_successful,success_calls_perc,rank
-HR,Lola van der Noot,"96,115",95,88,92,1
-HR,Stijn Steenbeek-Mahieu,"87,694",98,77,78,2
-HR,Olivier Adriaensdr,"82,901",94,78,82,3
 Finance,Matthias Zeldenrust-Meyer,"99,252",91,85,93,1
 Finance,Amy Chrodtrud,"93,885",99,88,88,2
 Finance,Amir Demmendaal,"88,226",100,90,90,3
 Games,Victor van der Horst-den Teuling,"89,944",100,87,87,1
 Games,Naud Cornelisse,"82,889",85,80,94,2
 Games,Alexander Muijs,"77,389",87,80,91,3
-Marketing,Linn Thout,"97,074",98,91,92,1
-Marketing,Jason van Dommelen,"93,773",100,89,89,2
-Marketing,Lara van Vlaanderen-van de Darnau,"93,065",100,95,95,3
+HR,Lola van der Noot,"96,115",95,88,92,1
+HR,Stijn Steenbeek-Mahieu,"87,694",98,77,78,2
+HR,Olivier Adriaensdr,"82,901",94,78,82,3
 IT,Jonas Wutke,"97,674",92,79,85,1
 IT,Dean Westerbeek,"91,570",82,77,93,2
 IT,Amy Roessink-van Beieren,"86,229",80,76,95,3
+Marketing,Linn Thout,"97,074",98,91,92,1
+Marketing,Jason van Dommelen,"93,773",100,89,89,2
+Marketing,Lara van Vlaanderen-van de Darnau,"93,065",100,95,95,3

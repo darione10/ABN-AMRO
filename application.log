@@ -530,3 +530,472 @@ Caused by: java.io.IOException: Mkdirs failed to create file:/C:/Users/dario/Des
 2024-09-22 11:44:09,408 - INFO - Starting output extra_insight_two
 2024-09-22 11:44:11,074 - INFO - extra_insight_two.csv is created.
 2024-09-22 11:44:11,074 - INFO - End of output extra_insight_two
+2024-09-22 11:52:59,294 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_one.csv
+2024-09-22 11:52:59,596 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_two.csv
+2024-09-22 11:52:59,795 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_three.csv
+2024-09-22 11:52:59,795 - INFO - All datasets are loaded.
+2024-09-22 11:52:59,795 - INFO - Starting output 1
+2024-09-22 11:52:59,899 - INFO - Data filtered on: ['IT']
+2024-09-22 11:52:59,899 - INFO - Data ordering by: sales_amount desc
+2024-09-22 11:53:01,077 - INFO - it_data.csv is created
+2024-09-22 11:53:01,078 - INFO - End of output 1
+2024-09-22 11:53:01,078 - INFO - Starting output 2
+2024-09-22 11:53:01,092 - INFO - Data filtered on: ['Marketing']
+2024-09-22 11:53:01,095 - INFO - Extracting pattern (\d{4}\s?[A-Z]{2}) from column address in new column postcode
+2024-09-22 11:53:01,770 - INFO - marketing_address_info.csv is created
+2024-09-22 11:53:01,770 - INFO - End of output 2
+2024-09-22 11:53:01,770 - INFO - Starting output 3
+2024-09-22 11:53:04,327 - INFO - department_breakdown.csv is created
+2024-09-22 11:53:04,327 - INFO - Starting output 3
+2024-09-22 11:53:04,327 - INFO - Starting output 4
+2024-09-22 11:53:09,250 - INFO - top_3.csv is created.
+2024-09-22 11:53:09,250 - INFO - End output 4
+2024-09-22 11:53:09,250 - INFO - Starting output 5
+2024-09-22 11:53:09,290 - INFO - Data filtered on: ['Netherlands']
+2024-09-22 11:53:13,391 - INFO - top_3_most_sold_per_department_netherlands.csv is created.
+2024-09-22 11:53:13,391 - INFO - End output 5
+2024-09-22 11:53:13,391 - INFO - Starting output 6
+2024-09-22 11:53:18,323 - INFO - best_salesperson.csv is created.
+2024-09-22 11:53:18,324 - INFO - End of output 6
+2024-09-22 11:53:18,324 - INFO - Starting output extra_insight_one
+2024-09-22 11:53:22,064 - INFO - extra_insight_one.csv is created.
+2024-09-22 11:53:22,064 - INFO - End of output extra_insight_one
+2024-09-22 11:53:22,064 - INFO - Starting output extra_insight_two
+2024-09-22 11:53:23,589 - INFO - extra_insight_two.csv is created.
+2024-09-22 11:53:23,589 - INFO - End of output extra_insight_two
+2024-09-22 12:15:52,314 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_one.csv
+2024-09-22 12:15:52,583 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_two.csv
+2024-09-22 12:15:52,839 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_three.csv
+2024-09-22 12:15:52,839 - INFO - All datasets are loaded.
+2024-09-22 12:15:52,839 - INFO - Starting output 1
+2024-09-22 12:15:52,941 - INFO - Data filtered on: ['IT']
+2024-09-22 12:15:52,941 - INFO - Data ordering by: sales_amount desc
+2024-09-22 12:15:54,590 - ERROR - Error occurred during processing: An error occurred while calling o57.save.
+: java.lang.UnsatisfiedLinkError: org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Ljava/lang/String;I)Z
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Native Method)
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access(NativeIO.java:793)
+	at org.apache.hadoop.fs.FileUtil.canRead(FileUtil.java:1249)
+	at org.apache.hadoop.fs.FileUtil.list(FileUtil.java:1454)
+	at org.apache.hadoop.fs.RawLocalFileSystem.listStatus(RawLocalFileSystem.java:601)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.fs.ChecksumFileSystem.listStatus(ChecksumFileSystem.java:761)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.getAllCommittedTaskPaths(FileOutputCommitter.java:334)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitJobInternal(FileOutputCommitter.java:404)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitJob(FileOutputCommitter.java:377)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.commitJob(HadoopMapReduceCommitProtocol.scala:192)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$writeAndCommit$3(FileFormatWriter.scala:275)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.timeTakenMs(Utils.scala:552)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.writeAndCommit(FileFormatWriter.scala:275)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeWrite(FileFormatWriter.scala:304)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:190)
+	at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:190)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:113)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:111)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:125)
+	at org.apache.spark.sql.execution.adaptive.AdaptiveSparkPlanExec.$anonfun$executeCollect$1(AdaptiveSparkPlanExec.scala:390)
+	at org.apache.spark.sql.execution.adaptive.AdaptiveSparkPlanExec.withFinalPlanUpdate(AdaptiveSparkPlanExec.scala:418)
+	at org.apache.spark.sql.execution.adaptive.AdaptiveSparkPlanExec.executeCollect(AdaptiveSparkPlanExec.scala:390)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:859)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:388)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:361)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:240)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.lang.Thread.run(Unknown Source)
+
+2024-09-22 12:15:54,591 - INFO - Closing down clientserver connection
+2024-09-22 12:16:26,298 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_one.csv
+2024-09-22 12:16:26,575 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_two.csv
+2024-09-22 12:16:26,821 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_three.csv
+2024-09-22 12:16:26,821 - INFO - All datasets are loaded.
+2024-09-22 12:16:26,821 - INFO - Starting output 1
+2024-09-22 12:16:26,919 - INFO - Data filtered on: ['IT']
+2024-09-22 12:16:26,919 - INFO - Data ordering by: sales_amount desc
+2024-09-22 12:16:28,527 - ERROR - Error occurred during processing: An error occurred while calling o57.save.
+: java.lang.UnsatisfiedLinkError: org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Ljava/lang/String;I)Z
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Native Method)
+	at org.apache.hadoop.io.nativeio.NativeIO$Windows.access(NativeIO.java:793)
+	at org.apache.hadoop.fs.FileUtil.canRead(FileUtil.java:1249)
+	at org.apache.hadoop.fs.FileUtil.list(FileUtil.java:1454)
+	at org.apache.hadoop.fs.RawLocalFileSystem.listStatus(RawLocalFileSystem.java:601)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.fs.ChecksumFileSystem.listStatus(ChecksumFileSystem.java:761)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.getAllCommittedTaskPaths(FileOutputCommitter.java:334)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitJobInternal(FileOutputCommitter.java:404)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitJob(FileOutputCommitter.java:377)
+	at org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.commitJob(HadoopMapReduceCommitProtocol.scala:192)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$writeAndCommit$3(FileFormatWriter.scala:275)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.timeTakenMs(Utils.scala:552)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.writeAndCommit(FileFormatWriter.scala:275)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeWrite(FileFormatWriter.scala:304)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:190)
+	at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:190)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:113)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:111)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:125)
+	at org.apache.spark.sql.execution.adaptive.AdaptiveSparkPlanExec.$anonfun$executeCollect$1(AdaptiveSparkPlanExec.scala:390)
+	at org.apache.spark.sql.execution.adaptive.AdaptiveSparkPlanExec.withFinalPlanUpdate(AdaptiveSparkPlanExec.scala:418)
+	at org.apache.spark.sql.execution.adaptive.AdaptiveSparkPlanExec.executeCollect(AdaptiveSparkPlanExec.scala:390)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:859)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:388)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:361)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:240)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.lang.Thread.run(Unknown Source)
+
+2024-09-22 12:16:28,527 - INFO - Closing down clientserver connection
+2024-09-22 12:22:33,277 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 12:22:33,491 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 12:22:33,674 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 12:22:33,674 - INFO - All datasets are loaded.
+2024-09-22 12:22:33,674 - INFO - Starting output 1
+2024-09-22 12:22:33,758 - INFO - Data filtered on: ['IT']
+2024-09-22 12:22:33,758 - INFO - Data ordering by: sales_amount desc
+2024-09-22 12:25:48,336 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 12:25:48,555 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 12:25:48,731 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 12:25:48,731 - INFO - All datasets are loaded.
+2024-09-22 12:25:48,731 - INFO - Starting output 1
+2024-09-22 12:25:48,811 - INFO - Data filtered on: ['IT']
+2024-09-22 12:25:48,811 - INFO - Data ordering by: sales_amount desc
+2024-09-22 12:27:12,802 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 12:27:13,065 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 12:27:13,278 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 12:27:13,279 - INFO - All datasets are loaded.
+2024-09-22 12:27:13,279 - INFO - Starting output 1
+2024-09-22 12:27:13,352 - INFO - Data filtered on: ['IT']
+2024-09-22 12:27:13,352 - INFO - Data ordering by: sales_amount desc
+2024-09-22 12:27:13,368 - INFO - Saving
+2024-09-22 12:27:47,609 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 12:27:47,813 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 12:27:47,989 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 12:27:47,989 - INFO - All datasets are loaded.
+2024-09-22 12:27:47,989 - INFO - Starting output 1
+2024-09-22 12:27:48,060 - INFO - Data filtered on: ['IT']
+2024-09-22 12:27:48,060 - INFO - Data ordering by: sales_amount desc
+2024-09-22 12:27:48,084 - INFO - Saving
+2024-09-22 12:29:33,028 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 12:29:33,230 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 12:29:33,421 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 12:29:33,421 - INFO - All datasets are loaded.
+2024-09-22 12:29:33,421 - INFO - Starting output 1
+2024-09-22 12:29:33,488 - INFO - Data filtered on: ['IT']
+2024-09-22 12:29:33,488 - INFO - Data ordering by: sales_amount desc
+2024-09-22 12:29:33,504 - INFO - Saving
+2024-09-22 12:30:24,774 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 12:30:24,978 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 12:30:25,151 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 12:30:25,151 - INFO - All datasets are loaded.
+2024-09-22 12:30:25,151 - INFO - Starting output 1
+2024-09-22 12:30:25,228 - INFO - Data filtered on: ['IT']
+2024-09-22 12:30:25,228 - INFO - Data ordering by: sales_amount desc
+2024-09-22 12:30:25,245 - INFO - Saving
+2024-09-22 12:32:42,453 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 12:32:42,697 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 12:32:42,895 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 12:32:42,896 - INFO - All datasets are loaded.
+2024-09-22 12:32:42,896 - INFO - Starting output 1
+2024-09-22 12:32:42,986 - INFO - Data filtered on: ['IT']
+2024-09-22 12:32:42,986 - INFO - Data ordering by: sales_amount desc
+2024-09-22 12:32:43,005 - INFO - Saving
+2024-09-22 12:34:16,055 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 12:34:16,294 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 12:34:16,498 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 12:34:16,498 - INFO - All datasets are loaded.
+2024-09-22 12:34:16,498 - INFO - Starting output 1
+2024-09-22 12:34:16,595 - INFO - Data filtered on: ['IT']
+2024-09-22 12:34:16,595 - INFO - Data ordering by: sales_amount desc
+2024-09-22 12:34:16,612 - INFO - Saving
+2024-09-22 12:37:54,666 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 12:37:54,871 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 12:37:55,060 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 12:37:55,060 - INFO - All datasets are loaded.
+2024-09-22 12:37:55,060 - INFO - Starting output 1
+2024-09-22 12:37:55,122 - INFO - Data filtered on: ['IT']
+2024-09-22 12:37:55,122 - INFO - Data ordering by: sales_amount desc
+2024-09-22 12:37:55,137 - INFO - Saving
+2024-09-22 12:38:12,400 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 12:38:12,603 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 12:38:12,792 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 12:38:12,792 - INFO - All datasets are loaded.
+2024-09-22 12:38:12,792 - INFO - Starting output 1
+2024-09-22 12:38:12,854 - INFO - Data filtered on: ['IT']
+2024-09-22 12:38:12,854 - INFO - Data ordering by: sales_amount desc
+2024-09-22 12:38:12,870 - INFO - Saving
+2024-09-22 12:41:32,109 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 12:41:32,336 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 12:41:32,531 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 12:41:32,531 - INFO - All datasets are loaded.
+2024-09-22 12:41:32,531 - INFO - Starting output 1
+2024-09-22 12:41:32,615 - INFO - Data filtered on: ['IT']
+2024-09-22 12:41:32,616 - INFO - Data ordering by: sales_amount desc
+2024-09-22 12:41:32,634 - INFO - Saving
+2024-09-22 12:43:18,035 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 12:43:18,275 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 12:43:18,469 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 12:43:18,469 - INFO - All datasets are loaded.
+2024-09-22 12:43:18,469 - INFO - Starting output 1
+2024-09-22 12:43:18,546 - INFO - Data filtered on: ['IT']
+2024-09-22 12:43:18,546 - INFO - Data ordering by: sales_amount desc
+2024-09-22 12:43:18,564 - INFO - Saving
+2024-09-22 13:05:20,241 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 13:05:20,444 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 13:05:20,617 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 13:05:20,617 - INFO - All datasets are loaded.
+2024-09-22 13:05:20,617 - INFO - Starting output 1
+2024-09-22 13:05:20,696 - INFO - Data filtered on: ['IT']
+2024-09-22 13:05:20,696 - INFO - Data ordering by: sales_amount desc
+2024-09-22 13:05:20,712 - INFO - Saving
+2024-09-22 13:14:27,229 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 13:14:27,463 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 13:14:27,652 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 13:14:27,652 - INFO - All datasets are loaded.
+2024-09-22 13:14:27,652 - INFO - Starting output 1
+2024-09-22 13:14:27,730 - INFO - Data filtered on: ['IT']
+2024-09-22 13:14:27,730 - INFO - Data ordering by: sales_amount desc
+2024-09-22 13:14:27,746 - INFO - Saving
+2024-09-22 13:18:31,583 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 13:18:31,808 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 13:18:31,988 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 13:18:31,988 - INFO - All datasets are loaded.
+2024-09-22 13:18:31,988 - INFO - Starting output 1
+2024-09-22 13:18:32,056 - INFO - Data filtered on: ['IT']
+2024-09-22 13:18:32,056 - INFO - Data ordering by: sales_amount desc
+2024-09-22 13:18:32,066 - INFO - Saving
+2024-09-22 13:30:48,120 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 13:30:48,337 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 13:30:48,526 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 13:30:48,526 - INFO - All datasets are loaded.
+2024-09-22 13:30:48,526 - INFO - Starting output 1
+2024-09-22 13:30:48,588 - INFO - Data filtered on: ['IT']
+2024-09-22 13:30:48,588 - INFO - Data ordering by: sales_amount desc
+2024-09-22 13:30:48,604 - INFO - Saving
+2024-09-22 13:31:40,212 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 13:31:40,420 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 13:31:40,611 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 13:31:40,611 - INFO - All datasets are loaded.
+2024-09-22 13:31:40,611 - INFO - Starting output 1
+2024-09-22 13:31:40,672 - INFO - Data filtered on: ['IT']
+2024-09-22 13:31:40,672 - INFO - Data ordering by: sales_amount desc
+2024-09-22 13:31:40,688 - INFO - Saving
+2024-09-22 13:40:35,195 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 13:40:35,415 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 13:40:35,605 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 13:40:35,605 - INFO - All datasets are loaded.
+2024-09-22 13:40:35,605 - INFO - Starting output 1
+2024-09-22 13:40:35,666 - INFO - Data filtered on: ['IT']
+2024-09-22 13:40:35,666 - INFO - Data ordering by: sales_amount desc
+2024-09-22 13:40:35,697 - INFO - Saving
+2024-09-22 13:43:16,519 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 13:43:16,872 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 13:43:17,314 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 13:43:17,314 - INFO - All datasets are loaded.
+2024-09-22 13:43:17,314 - INFO - Starting output 1
+2024-09-22 13:43:17,370 - INFO - Data filtered on: ['IT']
+2024-09-22 13:43:17,370 - INFO - Data ordering by: sales_amount desc
+2024-09-22 13:43:17,402 - INFO - Saving
+2024-09-22 13:44:18,220 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 13:44:18,440 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 13:44:18,641 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 13:44:18,641 - INFO - All datasets are loaded.
+2024-09-22 13:44:18,641 - INFO - Starting output 1
+2024-09-22 13:44:18,708 - INFO - Data filtered on: ['IT']
+2024-09-22 13:44:18,708 - INFO - Data ordering by: sales_amount desc
+2024-09-22 13:44:18,724 - INFO - Saving
+2024-09-22 13:44:47,194 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 13:44:47,478 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 13:44:47,689 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 13:44:47,689 - INFO - All datasets are loaded.
+2024-09-22 13:44:47,689 - INFO - Starting output 1
+2024-09-22 13:44:47,787 - INFO - Data filtered on: ['IT']
+2024-09-22 13:44:47,787 - INFO - Data ordering by: sales_amount desc
+2024-09-22 13:44:47,805 - INFO - Saving
+2024-09-22 13:48:10,493 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 13:48:10,769 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 13:48:10,992 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 13:48:10,992 - INFO - All datasets are loaded.
+2024-09-22 13:48:10,992 - INFO - Starting output 1
+2024-09-22 13:48:11,106 - INFO - Data filtered on: ['IT']
+2024-09-22 13:48:11,106 - INFO - Data ordering by: sales_amount desc
+2024-09-22 13:48:11,128 - INFO - Saving
+2024-09-22 13:50:34,453 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 13:50:34,709 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 13:50:34,927 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 13:50:34,927 - INFO - All datasets are loaded.
+2024-09-22 13:50:34,927 - INFO - Starting output 1
+2024-09-22 13:50:35,008 - INFO - Data filtered on: ['IT']
+2024-09-22 13:50:35,008 - INFO - Data ordering by: sales_amount desc
+2024-09-22 13:50:35,027 - INFO - Saving
+2024-09-22 14:01:39,576 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 14:01:39,810 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 14:01:40,020 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 14:01:40,020 - INFO - All datasets are loaded.
+2024-09-22 14:01:40,020 - INFO - Starting output 1
+2024-09-22 14:01:40,091 - INFO - Data filtered on: ['IT']
+2024-09-22 14:01:40,091 - INFO - Data ordering by: sales_amount desc
+2024-09-22 14:01:40,110 - INFO - Saving
+2024-09-22 14:01:41,370 - INFO - it_data.csv is created
+2024-09-22 14:01:41,370 - INFO - End of output 1
+2024-09-22 14:01:41,370 - INFO - Starting output 2
+2024-09-22 14:01:41,381 - INFO - Data filtered on: ['Marketing']
+2024-09-22 14:01:41,381 - INFO - Extracting pattern (\d{4}\s?[A-Z]{2}) from column address in new column postcode
+2024-09-22 14:01:42,202 - INFO - marketing_address_info.csv is created
+2024-09-22 14:01:42,202 - INFO - End of output 2
+2024-09-22 14:01:42,202 - INFO - Starting output 3
+2024-09-22 14:01:44,081 - INFO - department_breakdown.csv is created
+2024-09-22 14:01:44,081 - INFO - Starting output 3
+2024-09-22 14:01:44,081 - INFO - Starting output 4
+2024-09-22 14:01:46,050 - INFO - top_3.csv is created.
+2024-09-22 14:01:46,050 - INFO - End output 4
+2024-09-22 14:01:46,050 - INFO - Starting output 5
+2024-09-22 14:01:46,080 - INFO - Data filtered on: ['Netherlands']
+2024-09-22 14:01:47,246 - INFO - top_3_most_sold_per_department_netherlands.csv is created.
+2024-09-22 14:01:47,246 - INFO - End output 5
+2024-09-22 14:01:47,246 - INFO - Starting output 6
+2024-09-22 14:01:48,534 - INFO - best_salesperson.csv is created.
+2024-09-22 14:01:48,535 - INFO - End of output 6
+2024-09-22 14:01:48,535 - INFO - Starting output extra_insight_one
+2024-09-22 14:01:49,445 - INFO - extra_insight_one.csv is created.
+2024-09-22 14:01:49,445 - INFO - End of output extra_insight_one
+2024-09-22 14:01:49,445 - INFO - Starting output extra_insight_two
+2024-09-22 14:01:50,104 - INFO - extra_insight_two.csv is created.
+2024-09-22 14:01:50,104 - INFO - End of output extra_insight_two
+2024-09-22 14:03:00,759 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 14:03:01,073 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 14:03:01,432 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 14:03:01,432 - INFO - All datasets are loaded.
+2024-09-22 14:03:01,432 - INFO - Starting output 1
+2024-09-22 14:03:01,522 - INFO - Data filtered on: ['IT']
+2024-09-22 14:03:01,522 - INFO - Data ordering by: sales_amount desc
+2024-09-22 14:03:01,524 - INFO - Saving
+2024-09-22 14:03:02,895 - INFO - it_data.csv is created
+2024-09-22 14:03:02,895 - INFO - End of output 1
+2024-09-22 14:03:02,895 - INFO - Starting output 2
+2024-09-22 14:03:02,905 - INFO - Data filtered on: ['Marketing']
+2024-09-22 14:03:02,908 - INFO - Extracting pattern (\d{4}\s?[A-Z]{2}) from column address in new column postcode
+2024-09-22 14:03:03,844 - INFO - marketing_address_info.csv is created
+2024-09-22 14:03:03,844 - INFO - End of output 2
+2024-09-22 14:03:03,845 - INFO - Starting output 3
+2024-09-22 14:03:05,123 - INFO - department_breakdown.csv is created
+2024-09-22 14:03:05,123 - INFO - Starting output 3
+2024-09-22 14:03:05,123 - INFO - Starting output 4
+2024-09-22 14:03:07,140 - INFO - top_3.csv is created.
+2024-09-22 14:03:07,140 - INFO - End output 4
+2024-09-22 14:03:07,140 - INFO - Starting output 5
+2024-09-22 14:03:07,174 - INFO - Data filtered on: ['Netherlands']
+2024-09-22 14:03:08,344 - INFO - top_3_most_sold_per_department_netherlands.csv is created.
+2024-09-22 14:03:08,345 - INFO - End output 5
+2024-09-22 14:03:08,345 - INFO - Starting output 6
+2024-09-22 14:03:09,542 - INFO - best_salesperson.csv is created.
+2024-09-22 14:03:09,542 - INFO - End of output 6
+2024-09-22 14:03:09,542 - INFO - Starting output extra_insight_one
+2024-09-22 14:03:10,302 - INFO - extra_insight_one.csv is created.
+2024-09-22 14:03:10,302 - INFO - End of output extra_insight_one
+2024-09-22 14:03:10,302 - INFO - Starting output extra_insight_two
+2024-09-22 14:03:11,111 - INFO - extra_insight_two.csv is created.
+2024-09-22 14:03:11,111 - INFO - End of output extra_insight_two
+2024-09-22 14:03:11,111 - INFO - Closing down clientserver connection
+2024-09-22 14:03:43,240 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_one.csv
+2024-09-22 14:03:43,631 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_two.csv
+2024-09-22 14:03:43,883 - INFO - Successfully read file: C:\Users\dario\Desktop\abn-amro\ABN-AMRO\datasets\dataset_three.csv
+2024-09-22 14:03:43,883 - INFO - All datasets are loaded.
+2024-09-22 14:03:43,883 - INFO - Starting output 1
+2024-09-22 14:03:43,987 - INFO - Data filtered on: ['IT']
+2024-09-22 14:03:43,987 - INFO - Data ordering by: sales_amount desc
+2024-09-22 14:03:44,015 - INFO - Saving
+2024-09-22 14:03:45,449 - INFO - it_data.csv is created
+2024-09-22 14:03:45,449 - INFO - End of output 1
+2024-09-22 14:03:45,449 - INFO - Starting output 2
+2024-09-22 14:03:45,449 - INFO - Data filtered on: ['Marketing']
+2024-09-22 14:03:45,449 - INFO - Extracting pattern (\d{4}\s?[A-Z]{2}) from column address in new column postcode
+2024-09-22 14:03:46,417 - INFO - marketing_address_info.csv is created
+2024-09-22 14:03:46,417 - INFO - End of output 2
+2024-09-22 14:03:46,422 - INFO - Starting output 3
+2024-09-22 14:03:48,097 - INFO - department_breakdown.csv is created
+2024-09-22 14:03:48,097 - INFO - Starting output 3
+2024-09-22 14:03:48,097 - INFO - Starting output 4
+2024-09-22 14:03:50,700 - INFO - top_3.csv is created.
+2024-09-22 14:03:50,700 - INFO - End output 4
+2024-09-22 14:03:50,700 - INFO - Starting output 5
+2024-09-22 14:03:50,732 - INFO - Data filtered on: ['Netherlands']
+2024-09-22 14:03:52,514 - INFO - top_3_most_sold_per_department_netherlands.csv is created.
+2024-09-22 14:03:52,515 - INFO - End output 5
+2024-09-22 14:03:52,515 - INFO - Starting output 6
+2024-09-22 14:03:54,289 - INFO - best_salesperson.csv is created.
+2024-09-22 14:03:54,289 - INFO - End of output 6
+2024-09-22 14:03:54,289 - INFO - Starting output extra_insight_one
+2024-09-22 14:03:55,175 - INFO - extra_insight_one.csv is created.
+2024-09-22 14:03:55,175 - INFO - End of output extra_insight_one
+2024-09-22 14:03:55,175 - INFO - Starting output extra_insight_two
+2024-09-22 14:03:56,016 - INFO - extra_insight_two.csv is created.
+2024-09-22 14:03:56,016 - INFO - End of output extra_insight_two
+2024-09-22 14:03:56,016 - INFO - Closing down clientserver connection

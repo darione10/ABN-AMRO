@@ -1,12 +1,8 @@
 from pyspark.sql import SparkSession
 import pyspark.sql.functions as F
 import pyspark.sql.types as T
-# from pyspark.sql.dataframe import DataFrame
-# from pyspark.sql.window import Window
-# from pathlib import Path
 import logging
 from logging.handlers import RotatingFileHandler
-from pyspark.sql import SparkSession
 import sys
 from app.utils import *
 
@@ -35,6 +31,8 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
 
     setup_logging()
 
+
+
     dataset1 = dataset_one
     dataset2 = dataset_two
     dataset3 = dataset_three
@@ -62,8 +60,8 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
     df_sorted = order_dataframe(df=df_filter, column_name="sales_amount", ascending=False)
 
     df_limit = df_sorted.limit(100)
-
-    df_limit.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("it_data/it_data.csv")
+    logging.info("Saving")
+    df_limit.write.format("csv").mode("overwrite").option("header", "true").save("it_data/it_data.csv")
 
     logging.info("it_data.csv is created")
 
@@ -178,10 +176,10 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
 
     ## Output extra_insight_one - **What is the most sold product by country**
     logging.info("Starting output extra_insight_one")
-    
+
     df_aggregate = df3.groupBy(F.col("country"), F.col("product_sold"))\
         .agg(F.sum(F.col("quantity")).cast(T.IntegerType()).alias("total_quantity"))
-    
+
     df_top_product = get_top_performers(df=df_aggregate, group_by_col="country", order_by_col="total_quantity", top_n=1)
 
     df_top_product.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("extra_insight_one/extra_insight_one .csv")
@@ -191,12 +189,12 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
 
     ## Output extra_insight_two - **What is the average age by department?**
     logging.info("Starting output extra_insight_two")
-    
+
     df_joined = df1.join(df3, df1.id == df3.caller_id)
 
     df_avg_age = df_joined.groupBy(F.col("area"))\
         .agg(F.avg(F.col("age")).cast(T.IntegerType()).alias("avg_age"))
-    
+
     df_avg_age.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("extra_insight_two/extra_insight_two .csv")
 
 

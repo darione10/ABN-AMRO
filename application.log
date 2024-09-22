@@ -224,3 +224,278 @@
 2024-09-22 10:41:49,451 - INFO - Starting output 6
 2024-09-22 10:41:55,277 - INFO - best_salesperson.csv is created.
 2024-09-22 10:41:55,277 - INFO - End of output 6
+2024-09-22 11:17:19,519 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_one.csv
+2024-09-22 11:17:19,753 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_two.csv
+2024-09-22 11:17:19,973 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_three.csv
+2024-09-22 11:17:19,973 - INFO - All datasets are loaded.
+2024-09-22 11:17:19,973 - INFO - Starting output 1
+2024-09-22 11:17:20,068 - INFO - Data filtered on: ['IT']
+2024-09-22 11:17:21,318 - INFO - it_data.csv is created
+2024-09-22 11:17:21,318 - INFO - End of output 1
+2024-09-22 11:17:21,318 - INFO - Starting output 2
+2024-09-22 11:17:21,341 - INFO - Data filtered on: ['Marketing']
+2024-09-22 11:17:22,004 - INFO - marketing_address_info.csv is created
+2024-09-22 11:17:22,005 - INFO - End of output 2
+2024-09-22 11:17:22,005 - INFO - Starting output 3
+2024-09-22 11:17:24,509 - INFO - department_breakdown.csv is created
+2024-09-22 11:17:24,509 - INFO - Starting output 3
+2024-09-22 11:17:24,509 - INFO - Starting output 4
+2024-09-22 11:17:29,718 - INFO - top_3.csv is created.
+2024-09-22 11:17:29,718 - INFO - End output 4
+2024-09-22 11:17:29,718 - INFO - Starting output 5
+2024-09-22 11:17:29,752 - INFO - Data filtered on: ['Netherlands']
+2024-09-22 11:17:34,033 - INFO - top_3_most_sold_per_department_netherlands.csv is created.
+2024-09-22 11:17:34,033 - INFO - End output 5
+2024-09-22 11:17:34,033 - INFO - Starting output 6
+2024-09-22 11:17:39,357 - INFO - best_salesperson.csv is created.
+2024-09-22 11:17:39,357 - INFO - End of output 6
+2024-09-22 11:17:39,357 - INFO - Starting output 7
+2024-09-22 11:17:42,803 - INFO - best_product.csv is created.
+2024-09-22 11:17:42,803 - INFO - End of output 7
+2024-09-22 11:23:20,658 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_one.csv
+2024-09-22 11:23:20,892 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_two.csv
+2024-09-22 11:23:21,110 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_three.csv
+2024-09-22 11:23:21,110 - INFO - All datasets are loaded.
+2024-09-22 11:23:21,110 - INFO - Starting output 1
+2024-09-22 11:23:21,209 - INFO - Data filtered on: ['IT']
+2024-09-22 11:23:22,525 - INFO - it_data.csv is created
+2024-09-22 11:23:22,525 - INFO - End of output 1
+2024-09-22 11:23:22,525 - INFO - Starting output 2
+2024-09-22 11:23:22,555 - INFO - Data filtered on: ['Marketing']
+2024-09-22 11:23:23,192 - INFO - marketing_address_info.csv is created
+2024-09-22 11:23:23,192 - INFO - End of output 2
+2024-09-22 11:23:23,192 - INFO - Starting output 3
+2024-09-22 11:23:25,424 - INFO - department_breakdown.csv is created
+2024-09-22 11:23:25,424 - INFO - Starting output 3
+2024-09-22 11:23:25,424 - INFO - Starting output 4
+2024-09-22 11:23:30,210 - INFO - top_3.csv is created.
+2024-09-22 11:23:30,210 - INFO - End output 4
+2024-09-22 11:23:30,211 - INFO - Starting output 5
+2024-09-22 11:23:30,261 - INFO - Data filtered on: ['Netherlands']
+2024-09-22 11:23:34,090 - INFO - top_3_most_sold_per_department_netherlands.csv is created.
+2024-09-22 11:23:34,090 - INFO - End output 5
+2024-09-22 11:23:34,090 - INFO - Starting output 6
+2024-09-22 11:23:39,389 - INFO - best_salesperson.csv is created.
+2024-09-22 11:23:39,389 - INFO - End of output 6
+2024-09-22 11:23:39,389 - INFO - Starting output extra_insight_one
+2024-09-22 11:23:42,918 - ERROR - Error occurred during processing: An error occurred while calling o362.save.
+: org.apache.spark.SparkException: Job aborted.
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:231)
+	at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:188)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:108)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:106)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.doExecute(commands.scala:131)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:218)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:215)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:176)
+	at org.apache.spark.sql.execution.QueryExecution.toRdd$lzycompute(QueryExecution.scala:132)
+	at org.apache.spark.sql.execution.QueryExecution.toRdd(QueryExecution.scala:131)
+	at org.apache.spark.sql.DataFrameWriter.$anonfun$runCommand$1(DataFrameWriter.scala:989)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$5(SQLExecution.scala:103)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:163)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:90)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:772)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:64)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:989)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:438)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:415)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:293)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:238)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 32.0 failed 1 times, most recent failure: Lost task 0.0 in stage 32.0 (TID 1823) (localhost executor driver): java.io.IOException: Mkdirs failed to create file:/C:/Users/dario/Desktop/abn-amro/ABN-AMRO/extra_insight_one /extra_insight_one .csv/_temporary/0/_temporary/attempt_202409221123399053937299722296522_0032_m_000000_1823 (exists=false, cwd=file:/C:/Users/dario/Desktop/abn-amro/ABN-AMRO)
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:455)
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:440)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:911)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:892)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:789)
+	at org.apache.spark.sql.execution.datasources.CodecStreams$.createOutputStream(CodecStreams.scala:81)
+	at org.apache.spark.sql.execution.datasources.CodecStreams$.createOutputStreamWriter(CodecStreams.scala:92)
+	at org.apache.spark.sql.execution.datasources.csv.CsvOutputWriter.<init>(CsvOutputWriter.scala:38)
+	at org.apache.spark.sql.execution.datasources.csv.CSVFileFormat$$anon$1.newInstance(CSVFileFormat.scala:84)
+	at org.apache.spark.sql.execution.datasources.SingleDirectoryDataWriter.newOutputWriter(FileFormatDataWriter.scala:126)
+	at org.apache.spark.sql.execution.datasources.SingleDirectoryDataWriter.<init>(FileFormatDataWriter.scala:111)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:269)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$15(FileFormatWriter.scala:210)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2253)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2202)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2201)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2201)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1078)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1078)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1078)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:2440)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2382)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2371)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:868)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2202)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:200)
+	... 32 more
+Caused by: java.io.IOException: Mkdirs failed to create file:/C:/Users/dario/Desktop/abn-amro/ABN-AMRO/extra_insight_one /extra_insight_one .csv/_temporary/0/_temporary/attempt_202409221123399053937299722296522_0032_m_000000_1823 (exists=false, cwd=file:/C:/Users/dario/Desktop/abn-amro/ABN-AMRO)
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:455)
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:440)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:911)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:892)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:789)
+	at org.apache.spark.sql.execution.datasources.CodecStreams$.createOutputStream(CodecStreams.scala:81)
+	at org.apache.spark.sql.execution.datasources.CodecStreams$.createOutputStreamWriter(CodecStreams.scala:92)
+	at org.apache.spark.sql.execution.datasources.csv.CsvOutputWriter.<init>(CsvOutputWriter.scala:38)
+	at org.apache.spark.sql.execution.datasources.csv.CSVFileFormat$$anon$1.newInstance(CSVFileFormat.scala:84)
+	at org.apache.spark.sql.execution.datasources.SingleDirectoryDataWriter.newOutputWriter(FileFormatDataWriter.scala:126)
+	at org.apache.spark.sql.execution.datasources.SingleDirectoryDataWriter.<init>(FileFormatDataWriter.scala:111)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:269)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$15(FileFormatWriter.scala:210)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	... 1 more
+
+2024-09-22 11:26:54,213 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_one.csv
+2024-09-22 11:26:54,452 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_two.csv
+2024-09-22 11:26:54,666 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_three.csv
+2024-09-22 11:26:54,666 - INFO - All datasets are loaded.
+2024-09-22 11:26:54,666 - INFO - Starting output 1
+2024-09-22 11:26:54,754 - INFO - Data filtered on: ['IT']
+2024-09-22 11:26:56,011 - INFO - it_data.csv is created
+2024-09-22 11:26:56,011 - INFO - End of output 1
+2024-09-22 11:26:56,011 - INFO - Starting output 2
+2024-09-22 11:26:56,031 - INFO - Data filtered on: ['Marketing']
+2024-09-22 11:26:56,695 - INFO - marketing_address_info.csv is created
+2024-09-22 11:26:56,695 - INFO - End of output 2
+2024-09-22 11:26:56,696 - INFO - Starting output 3
+2024-09-22 11:26:59,212 - INFO - department_breakdown.csv is created
+2024-09-22 11:26:59,212 - INFO - Starting output 3
+2024-09-22 11:26:59,212 - INFO - Starting output 4
+2024-09-22 11:27:03,998 - INFO - top_3.csv is created.
+2024-09-22 11:27:03,999 - INFO - End output 4
+2024-09-22 11:27:03,999 - INFO - Starting output 5
+2024-09-22 11:27:04,032 - INFO - Data filtered on: ['Netherlands']
+2024-09-22 11:27:08,008 - INFO - top_3_most_sold_per_department_netherlands.csv is created.
+2024-09-22 11:27:08,008 - INFO - End output 5
+2024-09-22 11:27:08,008 - INFO - Starting output 6
+2024-09-22 11:27:13,049 - INFO - best_salesperson.csv is created.
+2024-09-22 11:27:13,049 - INFO - End of output 6
+2024-09-22 11:27:13,049 - INFO - Starting output extra_insight_one
+2024-09-22 11:27:16,700 - INFO - extra_insight_one.csv is created.
+2024-09-22 11:27:16,700 - INFO - End of output extra_insight_one
+2024-09-22 11:36:50,802 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_one.csv
+2024-09-22 11:36:51,043 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_two.csv
+2024-09-22 11:36:51,259 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_three.csv
+2024-09-22 11:36:51,259 - INFO - All datasets are loaded.
+2024-09-22 11:36:51,259 - INFO - Starting output 1
+2024-09-22 11:36:51,369 - INFO - Data filtered on: ['IT']
+2024-09-22 11:36:52,614 - INFO - it_data.csv is created
+2024-09-22 11:36:52,614 - INFO - End of output 1
+2024-09-22 11:36:52,615 - INFO - Starting output 2
+2024-09-22 11:36:52,628 - INFO - Data filtered on: ['Marketing']
+2024-09-22 11:36:53,308 - INFO - marketing_address_info.csv is created
+2024-09-22 11:36:53,308 - INFO - End of output 2
+2024-09-22 11:36:53,308 - INFO - Starting output 3
+2024-09-22 11:36:55,474 - INFO - department_breakdown.csv is created
+2024-09-22 11:36:55,474 - INFO - Starting output 3
+2024-09-22 11:36:55,474 - INFO - Starting output 4
+2024-09-22 11:37:00,420 - INFO - top_3.csv is created.
+2024-09-22 11:37:00,420 - INFO - End output 4
+2024-09-22 11:37:00,421 - INFO - Starting output 5
+2024-09-22 11:37:00,456 - INFO - Data filtered on: ['Netherlands']
+2024-09-22 11:37:04,252 - INFO - top_3_most_sold_per_department_netherlands.csv is created.
+2024-09-22 11:37:04,252 - INFO - End output 5
+2024-09-22 11:37:04,252 - INFO - Starting output 6
+2024-09-22 11:37:09,734 - INFO - best_salesperson.csv is created.
+2024-09-22 11:37:09,734 - INFO - End of output 6
+2024-09-22 11:37:09,734 - INFO - Starting output extra_insight_one
+2024-09-22 11:37:13,371 - INFO - extra_insight_one.csv is created.
+2024-09-22 11:37:13,371 - INFO - End of output extra_insight_one
+2024-09-22 11:38:18,732 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_one.csv
+2024-09-22 11:38:18,950 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_two.csv
+2024-09-22 11:38:19,167 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_three.csv
+2024-09-22 11:38:19,167 - INFO - All datasets are loaded.
+2024-09-22 11:38:19,167 - INFO - Starting output 1
+2024-09-22 11:38:19,265 - INFO - Data filtered on: ['IT']
+2024-09-22 11:38:20,509 - INFO - it_data.csv is created
+2024-09-22 11:38:20,509 - INFO - End of output 1
+2024-09-22 11:38:20,509 - INFO - Starting output 2
+2024-09-22 11:38:20,526 - INFO - Data filtered on: ['Marketing']
+2024-09-22 11:38:21,201 - INFO - marketing_address_info.csv is created
+2024-09-22 11:38:21,201 - INFO - End of output 2
+2024-09-22 11:38:21,201 - INFO - Starting output 3
+2024-09-22 11:38:23,399 - INFO - department_breakdown.csv is created
+2024-09-22 11:38:23,399 - INFO - Starting output 3
+2024-09-22 11:38:23,399 - INFO - Starting output 4
+2024-09-22 11:38:28,219 - INFO - top_3.csv is created.
+2024-09-22 11:38:28,219 - INFO - End output 4
+2024-09-22 11:38:28,219 - INFO - Starting output 5
+2024-09-22 11:38:28,263 - INFO - Data filtered on: ['Netherlands']
+2024-09-22 11:38:32,064 - INFO - top_3_most_sold_per_department_netherlands.csv is created.
+2024-09-22 11:38:32,064 - INFO - End output 5
+2024-09-22 11:38:32,064 - INFO - Starting output 6
+2024-09-22 11:38:37,665 - INFO - best_salesperson.csv is created.
+2024-09-22 11:38:37,665 - INFO - End of output 6
+2024-09-22 11:38:37,665 - INFO - Starting output extra_insight_one
+2024-09-22 11:38:41,465 - INFO - extra_insight_one.csv is created.
+2024-09-22 11:38:41,465 - INFO - End of output extra_insight_one
+2024-09-22 11:38:41,466 - INFO - Starting output extra_insight_two
+2024-09-22 11:38:41,549 - ERROR - Error occurred during processing: cannot resolve '`area`' given input columns: [age, caller_id, company, country, id, product_sold, quantity, recipient];
+'Aggregate ['area], ['area, cast(avg(cast(age#68 as double)) as int) AS avg_age#435]
++- Relation[id#64,caller_id#65,company#66,recipient#67,age#68,country#69,product_sold#70,quantity#71] csv
+
+2024-09-22 11:39:34,069 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_one.csv
+2024-09-22 11:39:34,306 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_two.csv
+2024-09-22 11:39:34,522 - INFO - Successfully read file: c:/Users/dario/Desktop/abn-amro/ABN-AMRO/datasets/dataset_three.csv
+2024-09-22 11:39:34,522 - INFO - All datasets are loaded.
+2024-09-22 11:39:34,522 - INFO - Starting output 1
+2024-09-22 11:39:34,608 - INFO - Data filtered on: ['IT']
+2024-09-22 11:39:35,843 - INFO - it_data.csv is created
+2024-09-22 11:39:35,843 - INFO - End of output 1
+2024-09-22 11:39:35,843 - INFO - Starting output 2
+2024-09-22 11:39:35,861 - INFO - Data filtered on: ['Marketing']
+2024-09-22 11:39:36,517 - INFO - marketing_address_info.csv is created
+2024-09-22 11:39:36,517 - INFO - End of output 2
+2024-09-22 11:39:36,517 - INFO - Starting output 3
+2024-09-22 11:39:38,982 - INFO - department_breakdown.csv is created
+2024-09-22 11:39:38,982 - INFO - Starting output 3
+2024-09-22 11:39:38,982 - INFO - Starting output 4
+2024-09-22 11:39:43,950 - INFO - top_3.csv is created.
+2024-09-22 11:39:43,950 - INFO - End output 4
+2024-09-22 11:39:43,950 - INFO - Starting output 5
+2024-09-22 11:39:43,999 - INFO - Data filtered on: ['Netherlands']
+2024-09-22 11:39:47,966 - INFO - top_3_most_sold_per_department_netherlands.csv is created.
+2024-09-22 11:39:47,966 - INFO - End output 5
+2024-09-22 11:39:47,966 - INFO - Starting output 6
+2024-09-22 11:39:53,454 - INFO - best_salesperson.csv is created.
+2024-09-22 11:39:53,454 - INFO - End of output 6
+2024-09-22 11:39:53,454 - INFO - Starting output extra_insight_one
+2024-09-22 11:39:57,939 - INFO - extra_insight_one.csv is created.
+2024-09-22 11:39:57,940 - INFO - End of output extra_insight_one
+2024-09-22 11:39:57,940 - INFO - Starting output extra_insight_two
+2024-09-22 11:39:59,339 - INFO - extra_insight_two.csv is created.
+2024-09-22 11:39:59,339 - INFO - End of output extra_insight_two

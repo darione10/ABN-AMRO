@@ -176,6 +176,32 @@ def main(dataset_one: str, dataset_two: str, dataset_three: str) -> None:
     logging.info("best_salesperson.csv is created.")
     logging.info("End of output 6")
 
+    ## Output extra_insight_one - **What is the most sold product by country**
+    logging.info("Starting output extra_insight_one")
+    
+    df_aggregate = df3.groupBy(F.col("country"), F.col("product_sold"))\
+        .agg(F.sum(F.col("quantity")).cast(T.IntegerType()).alias("total_quantity"))
+    
+    df_top_product = get_top_performers(df=df_aggregate, group_by_col="country", order_by_col="total_quantity", top_n=1)
+
+    df_top_product.repartition(1).write.format("csv").mode("overwrite").option("header", "true").save("extra_insight_one/extra_insight_one .csv")
+
+    logging.info("extra_insight_one.csv is created.")
+    logging.info("End of output extra_insight_one")
+
+    ## Output extra_insight_two - **What is the most sold product by country**
+    logging.info("Starting output extra_insight_two")
+    
+    df_joined = df1.join(df3, df1.id == df3.caller_id)
+
+    df_aggregate = df_joined.groupBy(F.col("area"))\
+        .agg(F.avg(F.col("age")).cast(T.IntegerType()).alias("avg_age"))
+    
+    df_aggregate.show()
+
+    logging.info("extra_insight_two.csv is created.")
+    logging.info("End of output extra_insight_two")
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
